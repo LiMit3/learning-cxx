@@ -1,11 +1,13 @@
 #include "../exercise.h"
 
-// READ: 有 cv 限定符的成员函数 <https://zh.cppreference.com/w/cpp/language/member_functions>
+// READ: 有 cv 限定符的成员函数
+// https://zh.cppreference.com/w/cpp/language/member_functions
 
 struct Fibonacci {
     int numbers[11];
-    // TODO: 修改方法签名和实现，使测试通过
-    int get(int i) {
+
+    int get(int i) const {
+        return numbers[i];
     }
 };
 
